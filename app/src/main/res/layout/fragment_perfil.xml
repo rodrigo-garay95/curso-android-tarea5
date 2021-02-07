@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PerfilFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="105dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/kodi"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10dp"
+        app:civ_shadow_color="#3f51b5"/>
+
+    <TextView
+        android:id="@+id/etiMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="258dp"
+        android:textSize="24dp"
+        android:paddingLeft="180dp"
+        android:paddingRight="180dp"
+        android:text="@string/tituloKodi"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/top_cardview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0"
+        />
+</FrameLayout>

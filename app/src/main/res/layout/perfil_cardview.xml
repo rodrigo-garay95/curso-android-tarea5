@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="@dimen/cardview_margin"
+    android:layout_marginEnd="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin1"
+    android:layout_marginBottom="@dimen/cardview_margin"
+    app:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="198dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:srcCompat="@drawable/bali" />
+
+        <ImageView
+            android:id="@+id/imgAbajo"
+            android:layout_width="@dimen/imagen_size"
+            android:layout_height="@dimen/imagen_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgMascota"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/bone_icon" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_mascota"
+            android:textSize="@dimen/nombre_mascosta"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@id/imgAbajo"
+            app:layout_constraintTop_toBottomOf="@id/imgMascota"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/txtLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cantidad_puntos"
+            android:textSize="@dimen/cantidad_puntos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/txtNombre"
+            app:layout_constraintTop_toBottomOf="@id/imgMascota"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/imgArriba"
+            android:layout_width="@dimen/imagen_size"
+            android:layout_height="@dimen/imagen_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtLike"
+            app:layout_constraintTop_toBottomOf="@id/imgMascota"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/bone_like_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

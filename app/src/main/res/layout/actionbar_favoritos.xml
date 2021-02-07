@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:elevation="@dimen/elevacion_actionbar"
+    android:background="@color/teal_700"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPieMascota"
+            android:layout_width="@dimen/boton_actiobar"
+            android:layout_height="@dimen/boton_actiobar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:tint="@color/white"
+            android:src="@drawable/ic_pie_mascota"
+            />
+
+        <TextView
+            android:id="@+id/txtTituloApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginRight="80dp"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+            android:textSize="@dimen/nombreboton_actionbar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

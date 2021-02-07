@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ContactoActivity">
+
+    <include
+        android:id="@+id/miActionBarFavoritos"
+        layout="@layout/actionbar_favoritos"
+        />
+
+    <TextView
+        android:id="@+id/etiTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miActionBarFavoritos"
+        android:layout_marginTop="@dimen/top1"
+        android:textSize="@dimen/text_titulo"
+        android:paddingLeft="@dimen/left1"
+        android:paddingRight="@dimen/right1"
+        android:text="@string/tituloContacto"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top1"
+        android:paddingLeft="@dimen/left"
+        android:paddingRight="@dimen/right">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etiNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/top"
+            android:hint="@string/nombre">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etiEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etiNombre"
+            android:paddingTop="@dimen/top"
+            android:hint="@string/email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etiMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etiEmail"
+            android:paddingTop="@dimen/top"
+            android:hint="@string/mensaje">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEnviarcomentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top1"
+            android:text="@string/nombreBotonEnviarComentario"
+            android:layout_below="@+id/etiMensaje"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

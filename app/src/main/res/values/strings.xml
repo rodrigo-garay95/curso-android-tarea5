@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="nombre_mascota">Mascota</string>
+    <string name="cantidad_puntos">0 Likes</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="nombre1">Nombre:</string>
+    <string name="nombreDesarrollador">Desarrollador:</string>
+    <string name="email1">Email:</string>
+    <string name="telefono1">Teléfono:</string>
+    <string name="mensaje1">Mensaje:</string>
+    <string name="nombreApp">Aplicación:</string>
+    <string name="nombre2">Rodrigo Garay</string>
+    <string name="telefono2">321976534</string>
+    <string name="email2">rodrigo@gmail.com</string>
+    <string name="nombreBotonEnviarComentario">Enviar Comentario</string>
+    <string name="tituloContacto">Contacto</string>
+    <string name="tituloAcercade">Acerca de</string>
+    <string name="tituloKodi">Kodi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AcercadeActivity">
+
+    <include
+        android:id="@+id/miActionBarFavoritos"
+        layout="@layout/actionbar_favoritos"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top1"
+        android:paddingLeft="@dimen/left"
+        android:paddingRight="@dimen/right"
+        >
+
+        <TextView
+            android:id="@+id/etiTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_titulo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tituloAcercade"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/etiTitulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top1"
+            />
+
+        <TextView
+            android:id="@+id/etiNombreapp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right"
+            android:layout_below="@+id/etiTitulo1"
+            android:text="@string/nombreApp"
+            />
+
+        <TextView
+            android:id="@+id/txtNombreapp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etiTitulo1"
+            android:layout_toRightOf="@+id/etiNombreapp1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/etiNombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right"
+            android:layout_below="@+id/etiNombreapp1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/nombreDesarrollador"
+            />
+
+        <TextView
+            android:id="@+id/txtNombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etiNombreapp1"
+            android:layout_toRightOf="@+id/etiNombre1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/nombre2"
+            />
+
+        <TextView
+            android:id="@+id/etiEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right"
+            android:layout_below="@+id/etiNombre1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/email1"
+            />
+
+        <TextView
+            android:id="@+id/txtEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombre1"
+            android:layout_toRightOf="@+id/etiEmail1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/email2"
+            />
+
+        <TextView
+            android:id="@+id/etiTelefono1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right"
+            android:layout_below="@+id/etiEmail1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/telefono1"
+            />
+
+        <TextView
+            android:id="@+id/txtTelefono1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail1"
+            android:layout_toRightOf="@+id/etiTelefono1"
+            android:textSize="@dimen/text_detalle"
+            android:text="@string/telefono2"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
