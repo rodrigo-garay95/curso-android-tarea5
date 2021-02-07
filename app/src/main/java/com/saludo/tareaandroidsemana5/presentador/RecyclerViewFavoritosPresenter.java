@@ -25,7 +25,7 @@ public class RecyclerViewFavoritosPresenter implements IRecyclerViewFavoritostPr
     @Override
     public void obtenerRankingBaseDatos() {
         constructorMascotas = new ConstructorMascotas(context);
-        mascotas = constructorMascotas.obtenerDatos();
+        mascotas = constructorMascotas.obtenerRanking();
         mostrarRankingRV();
     }
 
