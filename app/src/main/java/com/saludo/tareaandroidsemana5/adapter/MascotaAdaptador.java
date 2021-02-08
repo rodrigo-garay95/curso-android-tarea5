@@ -40,7 +40,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         Mascota mascota = mascotas.get(position);
         holder.imgMascota.setImageResource(mascota.getFoto());
         holder.txtNombre.setText(mascota.getNombre());
-        holder.txtLike.setText(String.valueOf(mascota.getLike()) + " Likes");
+        holder.txtLike.setText(String.valueOf(mascota.getCantidad_like()) + " Likes");
 
         holder.imgMascota.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +49,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                 Intent intent = new Intent(actividad, ContactoActivity.class);
                 intent.putExtra("nombre", mascota.getNombre());
                 intent.putExtra("foto", mascota.getFoto());
-                intent.putExtra("cantidad_like", mascota.getLike());
+                intent.putExtra("cantidad_like", mascota.getCantidad_like());
                 actividad.startActivity(intent);
             }
         });
@@ -65,7 +65,6 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
                         .setAction("Deshacer", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                mascota.setLike(mascota.getLike() - 1);
                                 Snackbar.make(v, "Like revertido", Snackbar.LENGTH_SHORT)
                                         .setBackgroundTint(v.getResources().getColor(R.color.red_light))
                                         .setActionTextColor(v.getResources().getColor(R.color.black)).

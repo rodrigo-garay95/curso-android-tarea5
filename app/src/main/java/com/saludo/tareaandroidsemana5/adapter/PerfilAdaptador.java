@@ -35,12 +35,12 @@ public class PerfilAdaptador extends RecyclerView.Adapter<PerfilAdaptador.Perfil
         Mascota mascota = mascotas.get(position);
         holder.imgMascota.setImageResource(mascota.getFoto());
         holder.txtNombre.setText(mascota.getNombre());
-        holder.txtLike.setText(String.valueOf(mascota.getLike()));
+        holder.txtLike.setText(String.valueOf(mascota.getCantidad_like()));
         holder.imgAbajo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mascota.setLike(mascota.getLike() + 1);
-                holder.txtLike.setText(String.valueOf(mascota.getLike()));
+                mascota.setCantidad_like(mascota.getCantidad_like() + 1);
+                holder.txtLike.setText(String.valueOf(mascota.getCantidad_like()));
                 Snackbar.make(v, "+1 Like para " + mascota.getNombre(), Snackbar.LENGTH_LONG)
                         .setBackgroundTint(v.getResources().getColor(R.color.green_light))
                         .setTextColor(v.getResources().getColor(R.color.black))
@@ -48,12 +48,12 @@ public class PerfilAdaptador extends RecyclerView.Adapter<PerfilAdaptador.Perfil
                         .setAction("Deshacer", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                mascota.setLike(mascota.getLike() - 1);
+                                mascota.setCantidad_like(mascota.getCantidad_like() - 1);
                                 Snackbar.make(v, "Like revertido", Snackbar.LENGTH_SHORT)
                                         .setBackgroundTint(v.getResources().getColor(R.color.red_light))
                                         .setActionTextColor(v.getResources().getColor(R.color.black)).
                                         show();
-                                holder.txtLike.setText(String.valueOf(mascota.getLike()));
+                                holder.txtLike.setText(String.valueOf(mascota.getCantidad_like()));
                             }
                         })
                         .show();

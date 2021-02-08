@@ -4,12 +4,12 @@ public class Mascota {
     private int id;
     private String nombre;
     private int foto;
-    private int like;
+    private int cantidad_like;
 
-    public Mascota(String nombre, int foto, int like) {
+    public Mascota(String nombre, int foto, int cantidad_like) {
         this.nombre = nombre;
         this.foto = foto;
-        this.like = like;
+        this.cantidad_like = cantidad_like;
     }
 
     public Mascota() {
@@ -40,11 +40,11 @@ public class Mascota {
         this.foto = foto;
     }
 
-    public int getLike() {
-        return like;
+    public int getCantidad_like() {
+        return cantidad_like;
     }
 
-    public void setLike(int like) {
-        this.like = like;
+    public void setCantidad_like(int cantidad_like) {
+        this.cantidad_like = cantidad_like;
     }
 }

@@ -51,7 +51,7 @@ public class BaseDatos extends SQLiteOpenHelper {
             mascota.setId(registros.getInt(0));
             mascota.setNombre(registros.getString(1));
             mascota.setFoto(registros.getInt(2));
-            mascota.setLike(registros.getInt(3));
+            mascota.setCantidad_like(registros.getInt(3));
 
             mascotas.add(mascota);
 
@@ -112,7 +112,7 @@ public class BaseDatos extends SQLiteOpenHelper {
             mascota.setId(registros.getInt(0));
             mascota.setNombre(registros.getString(1));
             mascota.setFoto(registros.getInt(2));
-            mascota.setLike(registros.getInt(3));
+            mascota.setCantidad_like(registros.getInt(3));
 
             mascotas.add(mascota);
 
