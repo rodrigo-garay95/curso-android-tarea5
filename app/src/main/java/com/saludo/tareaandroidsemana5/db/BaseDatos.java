@@ -103,7 +103,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     public ArrayList<Mascota> obtenerRankingMascotas(){
         ArrayList<Mascota> mascotas = new ArrayList<>();
 
-        String query = "SELECT * FROM " + ConstantesBaseDatos.TABLE_MASCOTA + " ORDER BY " + ConstantesBaseDatos.TABLE_MASCOTA_CANTIDAD_LIKE + " DESC";
+        String query = "SELECT * FROM " + ConstantesBaseDatos.TABLE_MASCOTA + " ORDER BY " + ConstantesBaseDatos.TABLE_MASCOTA_CANTIDAD_LIKE + " DESC LIMIT 5";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor registros = db.rawQuery(query, null);
 
